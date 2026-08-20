@@ -103,3 +103,28 @@ export interface HealthEducationGuide {
   downloadsCount: number;
   featured?: boolean;
 }
+
+export interface CommunitySuccessStory {
+  id: string;
+  motherName: string;
+  motherAge: number;
+  babyName?: string;
+  babyGender?: 'Girl' | 'Boy' | 'Twins';
+  village: string;
+  chiefdom: string;
+  district: string;
+  programUsed: string;
+  programId: string;
+  quote: string;
+  krioQuote: string;
+  narrative: string;
+  krioNarrative: string;
+  impactOutcome: string;
+  attendedBy: string;
+  clinicOrLocation: string;
+  date: string;
+  imageUrl: string;
+  imageAlt: string;
+  tags: string[];
+  suggestedSponsorshipAmount: number;
+}

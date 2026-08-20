@@ -13,6 +13,7 @@ import {
   BookOpen,
   Wifi,
   WifiOff,
+  MessageSquareQuote,
 } from 'lucide-react';
 import { FREEDOM_TREE_INFO } from '../data/mockData';
 import { useNetworkStatus } from '../hooks/useNetworkStatus';
@@ -41,6 +42,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     { id: 'overview', label: isKrio ? 'Awena (Overview)' : 'Overview', icon: Heart },
     { id: 'programs', label: isKrio ? 'Mama Program Dèm' : 'Programs', icon: ShieldCheck },
     { id: 'mamakit', label: isKrio ? 'Klin Mama Kit' : 'Mama Kits', icon: Package },
+    { id: 'stories', label: isKrio ? 'Stori Dèm' : 'Success Stories', icon: MessageSquareQuote, badge: 'New' },
     { id: 'health-edu', label: isKrio ? 'Elt Tok & Buku Dèm' : 'Health Education', icon: BookOpen, badge: 'Guides' },
     { id: 'clinics', label: isKrio ? 'Bo Klinik Dèm' : 'Bo Clinics & Map', icon: MapPin },
     { id: 'ai-triage', label: isKrio ? 'AI Midwife Dokta' : 'AI Health Advisor', icon: Sparkles, badge: 'AI' },

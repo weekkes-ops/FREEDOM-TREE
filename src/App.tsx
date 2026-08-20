@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { MaternalProgramsSection } from './components/MaternalProgramsSection';
 import { MamaKitInteractive } from './components/MamaKitInteractive';
+import { CommunitySuccessStories } from './components/CommunitySuccessStories';
 import { HealthEducationSection } from './components/HealthEducationSection';
 import { BoClinicsMap } from './components/BoClinicsMap';
 import { AIAssistantSection } from './components/AIAssistantSection';
@@ -71,6 +72,11 @@ export default function App() {
               isKrio={isKrio}
             />
 
+            <CommunitySuccessStories
+              isKrio={isKrio}
+              onSponsorStory={(programId, amount) => handleOpenDonate(amount, programId)}
+            />
+
             <HealthEducationSection
               isKrio={isKrio}
               onOpenHotlineModal={() => setIsHotlineOpen(true)}
@@ -113,6 +119,15 @@ export default function App() {
             <MamaKitInteractive
               onSponsorKit={handleSponsorKit}
               isKrio={isKrio}
+            />
+          </div>
+        )}
+
+        {activeTab === 'stories' && (
+          <div className="py-2">
+            <CommunitySuccessStories
+              isKrio={isKrio}
+              onSponsorStory={(programId, amount) => handleOpenDonate(amount, programId)}
             />
           </div>
         )}
