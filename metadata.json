@@ -1,0 +1,7 @@
+{
+  "name": "Freedom Tree Sierra Leone",
+  "description": "Maternal and infant healthcare platform reducing mortality in Sierra Leone through clean delivery kits, skilled birth care, clinic outreach, and AI triage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
